@@ -194,7 +194,7 @@ header {
 
 .nav-links .links li a:hover {
     border-bottom: 1px solid var(--alt-text-color);
-    color: #FFD700;
+    /* color: #FFD700; */
 }
 
 .hamburger {
@@ -248,7 +248,6 @@ header {
         cursor: pointer;
         background: transparent;
         color: var(--text-color);
-        margin-right: -2rem;
     }
 
     .hamburger div#close-icon {
@@ -344,6 +343,10 @@ h1 {
     padding: 5px 18px;
 }
 
+.left-container span {
+    color: var(--body-color);
+}
+
 .service-section .bottom-container {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
@@ -397,9 +400,6 @@ h1 {
     align-items: center;
 }
 
-.left-get-container, .top-portfolio-container {
-    /* width: 50%; */
-}
 
 .left-get-container .steps-to-get {
     margin-top: 1.5rem;
@@ -672,17 +672,29 @@ a, li, span {
 
 @media screen and (max-width: 700px) {
 
-    .easy-reach, header {
+    .easy-reach {
         width: 100%;
-        padding: 2px 20px;
+        padding: 2px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    
-    .hero-container {
+
+    header {
         width: 100%;
-        padding: 2rem 40px;
+        padding: 2px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    span.hero-text {
+        font-size: 1px;
+    }
+    
+    .hero-container, .hero-section {
+        width: 100%;
+        padding: 2rem 10px;
     }
 
     .section {
